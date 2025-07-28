@@ -1,0 +1,248 @@
+/* filepath: /Users/christiancontreras/Desktop/Prueba wp html/styles.css */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+h1 {
+    color: #212325;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+/*FUENTE PARA LOS HEADERS DE SECCION */
+.section-header-font {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-fijo {
+    position: fixed;
+    top: 400;
+    justify-content: center;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black with 50% transparency */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.menu-fijo a {
+    color: white;
+    font-size: 3 rem;
+    text-decoration: none;
+}
+/* inicio menu fijo al abrir sub menus */
+.dropdown {
+    color: white;
+    font-size: 3 rem;
+    text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+  min-width: 160px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* fin menu fijo al abrir sub menus */
+
+.menu-fijo .wp-block-group2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wp-block-group2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.wp-block-group2 p {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    /* Vertically center image and text */
+    gap: 0.5em;
+    /* Optional: space between image and text */
+}
+
+.wp-block-group2 img {
+    vertical-align: middle;
+    display: inline-block;
+    height: 1.2em;
+    /* Adjust as needed to match text height */
+}
+
+.wp-block-cover__image-background {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wp-block-cover {
+    width: 100vw;
+    overflow-x: hidden;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+}
+
+.logo {
+    flex: 0 0 auto;
+    padding-left: 2rem;
+    /* Adjust value as needed */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 auto;
+}
+
+.nav-links p {
+    position: relative;
+    margin: 0;
+    padding: 0 0.7em;
+    /* Even little padding left and right */
+    display: flex;
+    align-items: center;
+}
+
+.nav-links p:not(:last-child)::after {
+    content: "|";
+    margin-left: 0.7em;
+    color: #ccc;
+    /* Or any color you prefer */
+    font-size: 1em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5em;
+    flex: 0 0 auto;
+    padding-right: 2rem;
+    /* Adjust value as needed */
+}
+
+/*Style for the collage*/
+.collage-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.collage-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 400px;
+    overflow: hidden;
+    /* Prevents overflow if images are too large */
+}
+
+.collage-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.collage-text {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collage-text h2 {
+    margin-top: 0;
+}
+
+/* Grid settings, refactor to be reusable*/
+.parent-grid {
+    display: grid;
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% 18% 18% 18% 10% 10%;
+    gap: 8px;
+}
+.div-header {
+    height: auto;
+    text-align: center;
+    grid-column: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.grid-image {
+    height: 100%;
+    width: 100%;    
+    overflow: hidden;
+
+    grid-row: span 2 / span 2;
+    /* position is set in html grid-column-start: ?; grid-row-start: ?;*/
+}
+
+.large-img {
+    width: 100%;
+    height: 105%;
+    overflow: hidden;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    /* position is set in html grid-column-start: ?; grid-row-start: ?;*/
+
+}
+
+
+.div4-text {
+
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+}
+
+.image-footer {
+    height: auto;
+    text-align:initial 20px;
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+.grid-section-footer {
+    height: auto;
+    grid-column: span 5 / span 5;
+    grid-row-start: 6;
+}
