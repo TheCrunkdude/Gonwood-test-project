@@ -207,7 +207,6 @@ h1 {
     height: 100%;
     width: 100%;    
     overflow: hidden;
-
     grid-row: span 2 / span 2;
     /* position is set in html grid-column-start: ?; grid-row-start: ?;*/
 }
@@ -245,6 +244,58 @@ h1 {
     height: auto;
     grid-column: span 5 / span 5;
     grid-row-start: 6;
+}
+
+.category-selection-container {
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15% 65% 10% 10%;
+    gap: 8px;
+    row-gap: 10px;
+}
+.category-selection-header {
+    text-align: center;
+    grid-column: span 4 / span 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-bottom: 5px;
+}
+.category-selection-container img {
+    max-width: 100%;
+    overflow: hidden;
+    grid-row: span 1 / span 1;
+    /* position is set in html grid-column-start: ?; grid-row-start: ?;*/
+}
+.category-selection-container a {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    grid-column: span 1 / span 1;
+    grid-row: span 1 / span 1;
+    text-align: center;
+    font-size: 1.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-selection-container button {
+    margin:auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -297,4 +348,35 @@ z-index: 1;
 }
 .slider-navigation a:hover {
     opacity: 1;
+}
+.footer {
+  background-color: #abafb0;
+  width: 100%;
+  max-height: 10%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 5px 0px;
+  min-width: 150px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
