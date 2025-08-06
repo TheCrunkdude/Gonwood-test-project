@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 <body>
-     <div class="wp-block-group menu-fijo">
-        <!-- wp:group {"className":"wp-block-group2","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-        <div class="wp-block-group wp-block-group2">
+        <div class=" menu-fijo">
+        <div class="block-group">
 
             <div class="logo">
                 <p><a href="https://gonwood.mx/" data-type="page" data-id="3"><img src="Assets/Icons/Gonwood-01.png"
@@ -20,14 +19,15 @@
 
             <div class="nav-links">
                
-                <div><a>Catalogo 2025</a></div>
-                <!-- wp:paragraph -->
+                <div>
+                <p><a href="/Catalogo.html" data-type="page" data-id="113">Catalogo 2025</a></p>
+                </div>
                 <div class="dropdown">
-                <p><a href="/comedores.html#comedores" data-type="page" data-id="114">Comedores</a></p>
+                <p><a href="comedores.html#comedores" data-type="page" data-id="114">Comedores</a></p>
                  <div class="dropdown-content">
                         <a href="#"> Madera</a><br>
                         <a href="#">Granito </a><br>
-                        <a href="/Users/christiancontreras/Desktop/Prueba wp html/html/comedores.html#chapa"> Chapa Premium</a>
+                        <a href="comedores.html#chapa"> Chapa Premium</a>
                     </div>
                 </div>
                 <!-- /wp:paragraph -->
@@ -98,31 +98,28 @@
             </div>
 
         </div>
-        <!-- /wp:group -->
     </div>
 
-    
-</body>
-    <div id="chapa" class="div-header">
+    <div id="Comedores" class="div-header">
         <h1 style="color:transparent">COMEDORES</h1>
     </div>
-    <!-- Inicio del grid Manhattan -->
-    <div class="parent-grid">
+
+
+    <div id="Manhattan" class="parent-grid">
         <div class="div-header">
             <h1>MANHATTAN</h1>
         </div>
         <div class="grid-image" style="grid-column-start: 3; grid-row-start: 2;"><img
-                src="Assets/Chapa/Manhattan/Manhattan1.jpg" alt="Manhattan1" style="height:100%; max-width: 100%;">
+                src="Assets/Chapa/Manhattan/Manhattan1.jpg" alt="Manhattan1" style="max-width: 100%;">
         </div>
         <div class="grid-image" style="grid-column-start: 4; grid-row-start: 2;"><img
-                src="Assets/Chapa/Manhattan/Manhattan2.jpg" alt="Manhattan2" style="height:100%; max-width: 100%;">
+                src="Assets/Chapa/Manhattan/Manhattan2.jpg" alt="Manhattan2" style=" max-height: 100%;">
         </div>
         <div class="grid-image" style="grid-column-start: 5; grid-row-start: 2;"><img
-                src="Assets/Chapa/Manhattan/Manhattan3.jpg" alt="Manhattan3" style="height:100%; max-width: 100%;">
+                src="Assets/Chapa/Manhattan/Manhattan3.jpg" alt="Manhattan3" style="max-width: 100%;">
         </div>
         <div class="div4-text" style="grid-column-start: 3; grid-row-start: 4;">
-
-            <h1 style="font-size:4em; line-height: 1; margin-bottom: 0.2em; margin-top: 0%;">Enchapado Premium de Parota
+            <h1 class="responsive-text-big" style="line-height: 1; margin-bottom: 0.2em; margin-top: 0%;">Enchapado Premium de Parota
             </h1>
             <div style="display: flex; justify-content: space-between; align-items: center;">
                 <span style="margin-left: .5%; margin-top: 0px;">Mesa para <b>6</b> personas <b>$11,700</b> </span>
@@ -136,12 +133,11 @@
         <div class="grid-section-footer">
             <p>* Silla de madera de pino estufado. A partir de 6 sillas el precio baja a $3,500 por silla. Contamos con
                 meses sin intereses. En caso de ser el pago de contado se puede hacer un ajuste en el precio final.
+                Precios sujetos a cambios sin previo aviso.
                 Aplican restricciones</p>
         </div>
     </div>
-    <!-- fin del grid Manhattan -->
 
-    <!-- Inicio del grid Sofia -->
     <div id="Sofia" class="parent-grid">
         <div class="div-header">
             <h1>SOFIA</h1>
@@ -157,7 +153,7 @@
             <h1 style="font-size:4em; line-height: 1; margin-bottom: 0.2em; margin-top: 0%;">Enchapado Premium de Parota
             </h1>
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span style="margin-left: .5%; margin-top: 0px;">
+                <span style="margin-left: .5%; margin-top: -15px;">
                     Mesa para <b>4</b> personas <b>$7,500</b><br>
                     Mesa para <b>6</b> personas <b>$13,300</b><br>
                     Mesa para <b>8</b> personas <b>$18,000</b>
@@ -173,16 +169,15 @@
         </div>
         <div class="large-img" style="grid-column-start: 4; grid-row-start: 2;"><img src="Assets/Chapa/Sofia/sofia4.jpg"
                 alt="sofia4" style=" width: 100%; grid-column-start: 4; grid-row-start: 2;"></div>
-        <div class="grid-section-footer">
+        <div class="grid-section-footer" style="margin-top: -20px;">
             <p>* Silla de madera de pino estufado. A partir de 6 sillas el precio baja a $3,500 por silla. Contamos con
                 meses sin intereses. En caso de ser el pago de contado se puede hacer un ajuste en el precio final.
+                Pecios sujetos a cambios sin previo aviso.
                 Aplican restricciones</p>
         </div>
     </div>
-    <!-- fin del grid Sofia -->
-
-    <!-- Inicio del grid ISABELLA -->
-    <div id="Sofia" class="parent-grid">
+   
+    <div id="Isabella" class="parent-grid">
         <div class="div-header">
             <h1>ISABELLA</h1>
         </div>
@@ -214,23 +209,22 @@
         <div class="grid-section-footer">
             <p>* Silla de madera de pino estufado. A partir de 6 sillas el precio baja a $3,500 por silla. Contamos con
                 meses sin intereses. En caso de ser el pago de contado se puede hacer un ajuste en el precio final.
+                Precios sujetos a cambios sin previo aviso.
                 Aplican restricciones</p>
         </div>
     </div>
-    <!-- fin del grid ISABELLA -->
-    <!-- Inicio del grid VENECIA -->
-    <div class="parent-grid">
+  
+    <div id="Venecia" class="parent-grid">
         <div class="div-header">
             <h1>VENECIA</h1>
         </div>
         <div class="grid-image" style="grid-column-start: 3; grid-row-start: 2;"><img
-                src="Assets/Chapa/chapa_vencia/venecia2.png" alt="venecia2" style="height:100%; max-width: 100%;"></div>
+                src="Assets/Chapa/chapa_vencia/venecia1.png" alt="venecia1" style="height:100%; max-width: 100%;"></div>
         <div class="grid-image" style="grid-column-start: 4; grid-row-start: 2;"><img
-                src="Assets/Chapa/chapa_vencia/venecia1.png" alt="venecia3" style="height:100%; min-width: 100%;"></div>
+                src="Assets/Chapa//chapa_vencia/venecia2.png" alt="venecia2" style="height:100%; max-width: 100%;"></div>
         <div class="grid-image" style="grid-column-start: 5; grid-row-start: 2;"><img
-                src="Assets/Chapa/chapa_vencia/venecia4.png" alt="venecia4" style="height:100%; min-width: 100%;"></div>
+                src="Assets/Chapa/chapa_vencia/venecia3.png" alt="venecia3" style="height:100%; max-width: 100%;"></div>
         <div class="div4-text" style="grid-column-start: 3; grid-row-start: 4;">
-
             <h1 style="font-size:4em; line-height: 1; margin-bottom: 0.2em; margin-top: 0%;">Enchapado Premium de Tzalam
             </h1>
             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -247,18 +241,18 @@
             </div>
         </div>
         <div class="large-img" style="grid-column-start: 1; grid-row-start: 2;"><img
-                src="Assets/Chapa/chapa_vencia/venecia3.png" alt="venecia1" style=" width: 100%; "></div>
+                src="Assets/Chapa/chapa_vencia/venecia3.png" alt="Venecia" style=" width: 100%; "></div>
         <div class="grid-section-footer">
             <p>* Silla de madera de pino estufado. A partir de 6 sillas el precio baja a $3,500 por silla. Contamos con
                 meses sin intereses. En caso de ser el pago de contado se puede hacer un ajuste en el precio final.
+                Precios sujetos a cambios sin previo aviso.
                 Aplican restricciones</p>
         </div>
     </div>
-    <!-- fin del grid VENECIA -->
 
 
 </body>
-<footer>
+<footer >
     <div>
         <p>© 2025 Gonwood Querétaro. Todos los derechos reservados.</p>
         <p>Diseñado por <a href="https://" target="_blank">MajaStudioMX</a></p>
